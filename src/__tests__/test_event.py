@@ -5,10 +5,9 @@ from ..event import Event
 
 
 class TestEvent(TestCase):
-    
-    @classmethod
-    def setUp(cls):
-        cls.event = Event()
+
+    def setUp(self):
+        self.event = Event()
 
     def test_enable(self):
         with self.subTest('should set Event as enabled'):

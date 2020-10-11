@@ -6,9 +6,8 @@ from ..event_emitter import EventEmitter
 
 class TestEventEmitter(TestCase):
 
-    @classmethod
-    def setUp(cls):
-        cls.eventEmitter = EventEmitter()
+    def setUp(self):
+        self.eventEmitter = EventEmitter()
 
     def test_contains(self):
         with self.subTest('should return True if contains event'):
